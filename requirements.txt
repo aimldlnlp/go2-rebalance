@@ -1,0 +1,5 @@
+mujoco
+numpy
+psutil
+gymnasium
+stable-baselines3==2.7.1

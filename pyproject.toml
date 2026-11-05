@@ -1,0 +1,101 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "go2-rebalance-research"
+version = "0.1.0"
+description = "Go2 walking and motor-fault research in MuJoCo"
+readme = "README.md"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+package-dir = {"" = "research"}
+py-modules = [
+  "project_paths",
+  "ablate_action_scale",
+  "analyze_walking_gain_next_step",
+  "analyze_walking_navigation",
+  "analyze_walking_next_step",
+  "analyze_walking_residual_pilot",
+  "analyze_walking_reward_stall",
+  "analyze_walking_stop",
+  "analyze_walking_torque_authority",
+  "audit_sudden",
+  "compare_walking_low_noise",
+  "cross_motor",
+  "diagnose_actions",
+  "diagnose_walking_fault",
+  "expert_selector",
+  "explain_walking_residual_ablation",
+  "extend",
+  "finalize_rr_severity_visual_video",
+  "finish_action_diagnosis",
+  "go2_env",
+  "improve",
+  "make_four_panel_demo",
+  "make_fullscreen_demo_60s",
+  "make_fullscreen_demo_video",
+  "make_fullscreen_demo_video_final",
+  "make_fullscreen_demo_video_v2",
+  "make_multimotor_video",
+  "make_portfolio_video_90s",
+  "make_portfolio_video_90s_final",
+  "make_rr_severity_video",
+  "make_rr_severity_visual_video",
+  "make_transfer_video",
+  "make_walking_progress_data_video",
+  "make_walking_progress_video_minimal",
+  "multimotor",
+  "multimotor_extend",
+  "plot_walking_noise_ablation",
+  "plot_walking_postfault_ablation",
+  "report_walking_fault_diagnosis",
+  "report_walking_gain_ablation",
+  "report_walking_low_noise_comparison",
+  "report_walking_residual_privileged_pilot",
+  "report_walking_rr85_confirmation",
+  "report_walking_rr_mild_severity",
+  "report_walking_rr_severity",
+  "restyle_walking_fault_plot",
+  "review_action_diagnosis",
+  "review_multimotor",
+  "review_walking",
+  "review_walking_progress_reward_pilot",
+  "review_walking_residual_height_pilot",
+  "review_walking_residual_low_noise_pilot",
+  "review_walking_residual_pilot",
+  "review_walking_residual_privileged_pilot",
+  "review_walking_rr_specialist_pilot",
+  "run",
+  "sudden",
+  "sudden_video",
+  "transfer_experts",
+  "verify_walking_residual_env",
+  "walking_baseline",
+  "walking_calibrated",
+  "walking_gain_ablation",
+  "walking_navigation",
+  "walking_navigation_hold",
+  "walking_noise_ablation",
+  "walking_postfault_ablation",
+  "walking_progress_reward_pilot",
+  "walking_residual_ablation",
+  "walking_residual_env",
+  "walking_residual_height_env",
+  "walking_residual_height_pilot",
+  "walking_residual_low_noise_pilot",
+  "walking_residual_pilot",
+  "walking_residual_privileged_env",
+  "walking_residual_privileged_pilot",
+  "walking_rr85_confirmation",
+  "walking_rr_mild_severity",
+  "walking_rr_severity",
+  "walking_rr_specialist_pilot",
+  "walking_strength_masking",
+  "walking_strength_masking_rollout"
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

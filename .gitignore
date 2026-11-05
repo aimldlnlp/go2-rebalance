@@ -1,0 +1,34 @@
+# Local runtime and third-party assets
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+/build/
+/dist/
+/vendor/
+/work/
+
+# Generated caches, design drafts and local handovers
+/graphify-out/
+/output/
+/HANDOVER*.md
+/ALL12_DEVELOPMENT_STATUS.md
+.DS_Store
+Thumbs.db
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Keep raw research archives locally. Publish only the selected demo.
+/results/*
+!/results/go2_four_panel_demo/
+/results/go2_four_panel_demo/*
+!/results/go2_four_panel_demo/README.md
+!/results/go2_four_panel_demo/go2_all_motors_four_panel_60s.mp4

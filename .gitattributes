@@ -1,0 +1,4 @@
+# Preserve byte-level source checksums used by archived experiment manifests.
+* -text
+*.mp4 binary
+*.png binary
